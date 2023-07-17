@@ -1,0 +1,149 @@
+:root {
+    /* Colors */
+    --yellow: #EAC926;
+    --blue: #03264C;
+    --sky-blue: #1259c3;
+    --dark-gray: #666; /* footer font color */
+    --light-gray: #ebebeb; /* burguer icon */
+    --green: #39b54a;
+    /* Fonts */
+    --font: 'Roboto', sans-serif;
+    /* Display settings */
+    --display-text-body: 12px;
+    --display-title: 24px;
+    --display-prices: 18px;
+    --display-discounts: 16px;
+    --display-descriptions: 16px;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--light-gray);
+}
+
+/* --- Header --- */
+
+header {
+    background-color: var(--yellow);
+}
+
+header nav img {
+    margin: 24px 0 12px 24px;
+    width: 38%;
+    height: auto;
+}
+
+header nav form {
+    margin: 0 0 0 24px;
+}
+
+header nav p {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin-left: -40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav .burger-menu {
+    display: grid;
+    place-items: center;
+    margin: 20px 0;
+}
+
+header nav .burger-menu i {
+    color: var(--light-gray);
+    background-color: var(--sky-blue);
+    font-size: 1.2em;
+    width: 1.9em;
+    height: 1.9em;
+    display: grid;
+    place-items: center;
+    border-radius: 12%;
+}
+
+/* banner */
+header img {
+    width: 100%;
+    height: auto;
+}
+
+/* --- Main --- */
+
+main section h2 {
+    font-size: var(--display-title);
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+main section article {
+    text-align: center;
+    margin: 24px 24px;
+    background-color: white;
+}
+
+main section article img {
+    width: 100%;
+    height: auto;
+}
+
+main section article .article__price {
+    font-size: var(--display-prices);
+    text-align: left;
+    margin-left: 18px;
+}
+
+main section article .article__discounts {
+    font-size: var(--display-discounts);
+    text-align: left;
+    margin-left: 18px;
+}
+
+main section article .article__description {
+    font-size: var(--display-descriptions);
+    padding-bottom: 12px;
+    text-align: left;
+    margin-left: 18px;
+}
+
+/* --- Footer --- */
+
+footer {
+    color: var(--dark-gray);
+    background-color: white;
+    width: 95vw;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+footer article {
+    padding-top: 48px;
+}
+
+footer article i {
+    margin: 10px;
+    font-size: 2em;
+    color: var(--sky-blue);
+}
+
+footer article h3 {
+    margin: 0;
+}
+
+footer .footer__description {
+    margin: 1px 36px 0;
+    text-align: center;
+}
+
+footer .footer__copy {
+    text-align: left;
+    margin-top: 48px;
+    margin-left: 18px;
+    padding-bottom: 24px;
+}
