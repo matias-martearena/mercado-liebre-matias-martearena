@@ -26,18 +26,16 @@
                src="/img/logo-mercado-liebre.svg"
                alt="Logo Mercado Liebre"
             />
-            <div class="main_header_search_bar">
+            <form class="main_header_search_bar">
                <input
                   type="search"
                   name="search-bar"
                   placeholder="Buscar productos, marcas"
                />
-               <form action="/search" method="get">
-                  <button class="main_header_button" type="button">
-                     <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-               </form>
-            </div>
+               <button class="main_header_button" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </button>
+            </form>
             <h2 class="main_header_description">
                <i class="fa-solid fa-hand-holding-dollar"></i>
                Comprá en cuotas y sin tarjeta de crédito
@@ -76,8 +74,8 @@
       </header>
       <main class="main_conteiner">
          <!-- Seccion 'Basado en su ultima visita' -->
+         <h2 class="main__title">Basado en su ulitma visita</h2>
          <section class="main_section">
-            <h2>Basado en su ulitma visita</h2>
             <!-- Producto independiente 1 -->
             <article>
                <img
@@ -87,8 +85,10 @@
                />
                <div class="article_div_conteiner">
                   <i class="fa-solid fa-truck-fast"></i>
-                  <p class="article__price">$6.770</p>
-                  <p class="article__discounts">40% OFF</p>
+                  <div class="div__conteiner-price">
+                     <p class="article__price">$6.770</p>
+                     <p class="article__discounts">40% OFF</p>
+                  </div>
                   <p class="article__description">Cafetera Moulinex</p>
                </div>
             </article>
@@ -101,8 +101,10 @@
                />
                <div class="article_div_conteiner">
                   <i class="fa-solid fa-truck-fast"></i>
-                  <p class="article__price">$230.000</p>
-                  <p class="article__discounts">20% OFF</p>
+                  <div class="div__conteiner-price">
+                     <p class="article__price">$230.000</p>
+                     <p class="article__discounts">20% OFF</p>
+                  </div>
                   <p class="article__description">MacBook Pro 2019</p>
                </div>
             </article>
@@ -115,8 +117,10 @@
                />
                <div class="article_div_conteiner">
                   <i class="fa-solid fa-truck-fast"></i>
-                  <p class="article__price">$70.500</p>
-                  <p class="article__discounts">10% OFF</p>
+                  <div class="div__conteiner-price">
+                     <p class="article__price">$70.500</p>
+                     <p class="article__discounts">10% OFF</p>
+                  </div>
                   <p class="article__description">Samsung Galaxy S10</p>
                </div>
             </article>
@@ -129,15 +133,17 @@
                />
                <div class="article_div_conteiner">
                   <i class="fa-solid fa-truck-fast"></i>
-                  <p class="article__price">$23.200</p>
-                  <p class="article__discounts">5% OFF</p>
+                  <div class="div__conteiner-price">
+                     <p class="article__price">$23.200</p>
+                     <p class="article__discounts">5% OFF</p>
+                  </div>
                   <p class="article__description">SmartTv Samsung 43"</p>
                </div>
             </article>
          </section>
          <!-- Seccion 'Ofertas' -->
+         <h2 class="main__title">Ofertas</h2>
          <section class="main_section">
-            <h2>Ofertas</h2>
             <!-- Producto independiente 1 -->
             <article>
                <img
@@ -147,8 +153,10 @@
                />
                <div class="article_div_conteiner">
                   <i class="fa-solid fa-truck-fast"></i>
-                  <p class="article__price">$6.770</p>
-                  <p class="article__discounts">40% OFF</p>
+                  <div class="div__conteiner-price">
+                     <p class="article__price">$6.770</p>
+                     <p class="article__discounts">40% OFF</p>
+                  </div>
                   <p class="article__description">Cafetera Moulinex</p>
                </div>
             </article>
@@ -161,8 +169,10 @@
                />
                <div class="article_div_conteiner">
                   <i class="fa-solid fa-truck-fast"></i>
-                  <p class="article__price">$230.000</p>
-                  <p class="article__discounts">20% OFF</p>
+                  <div class="div__conteiner-price">
+                     <p class="article__price">$230.000</p>
+                     <p class="article__discounts">20% OFF</p>
+                  </div>
                   <p class="article__description">MacBook Pro 2019</p>
                </div>
             </article>
@@ -175,8 +185,10 @@
                />
                <div class="article_div_conteiner">
                   <i class="fa-solid fa-truck-fast"></i>
-                  <p class="article__price">$70.500</p>
-                  <p class="article__discounts">10% OFF</p>
+                  <div class="div__conteiner-price">
+                     <p class="article__price">$70.500</p>
+                     <p class="article__discounts">10% OFF</p>
+                  </div>
                   <p class="article__description">Samsung Galaxy S10</p>
                </div>
             </article>
@@ -189,8 +201,10 @@
                />
                <div class="article_div_conteiner">
                   <i class="fa-solid fa-truck-fast"></i>
-                  <p class="article__price">$23.200</p>
-                  <p class="article__discounts">5% OFF</p>
+                  <div class="div__conteiner-price">
+                     <p class="article__price">$23.200</p>
+                     <p class="article__discounts">5% OFF</p>
+                  </div>
                   <p class="article__description">SmartTv Samsung 43"</p>
                </div>
             </article>
