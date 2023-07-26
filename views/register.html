@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Register Page Mercado Liebre</title>
+      <!-- Fonts -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+         rel="stylesheet"
+      />
+      <!-- Icons -->
+      <script
+         src="https://kit.fontawesome.com/1a700a01d3.js"
+         crossorigin="anonymous"
+      ></script>
+      <!-- Styles -->
+      <link rel="stylesheet" href="/css/normalize.css" />
+      <link rel="stylesheet" href="/css/register.css" />
+   </head>
+   <body>
+      <h1>Register Mercado Liebre</h1>
+      <section class="main__form-conteiner">
+         <h2 class="main__title">Regístrate</h2>
+         <form class="main__form" action="/register-user" method="get">
+            <label class="label-off" for="name-lastname"
+               >Nombre y apellido</label
+            >
+            <input
+               class="box-input"
+               type="text"
+               name="name-lastname"
+               id="name-lastname"
+               minlength="4"
+               maxlength="100"
+               pattern="[A-Za-z\s]+"
+               placeholder="Nombre y apellido"
+               required
+            />
+            <label class="label-off" for="user-name">Nombre de usuario</label>
+            <input
+               class="box-input"
+               type="text"
+               name="user-name"
+               id="user-name"
+               minlength="2"
+               maxlength="30"
+               pattern="[A-Za-z_-]+"
+               placeholder="Nombre de usuario"
+               required
+            />
+            <label class="label-off" for="email">Email</label>
+            <input
+               class="box-input"
+               type="email"
+               name="email"
+               id="email"
+               minlength="10"
+               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+               placeholder="E-mail"
+               required
+            />
+            <label class="label-off" for="password">Contraseña</label>
+            <input
+               class="box-input"
+               type="password"
+               name="password"
+               id="password"
+               minlength="4"
+               maxlength="20"
+               pattern="[A-Za-z0-9]+"
+               placeholder="Contraseña"
+               required
+            />
+            <label class="label-off" for="confirm-password"
+               >Confirmar contraseña</label
+            >
+            <input
+               class="box-input"
+               type="password"
+               name="confirm-password"
+               id="confirm-password"
+               minlength="4"
+               maxlength="20"
+               pattern="[A-Za-z0-9]+"
+               placeholder="Confirmar contraseña"
+               required
+            />
+            <label class="label-off" for="address">Domicilio</label>
+            <input
+               class="box-input"
+               type="text"
+               name="address"
+               id="address"
+               minlength="2"
+               maxlength="100"
+               pattern="[A-Za-z0-9\s]+"
+               placeholder="Domicilio"
+               required
+            />
+            <label class="label-on" for="date-birth">Fecha de nacimiento</label>
+            <input
+               class="box-input"
+               type="date"
+               name="date-birth"
+               id="date-birth"
+               min="1900-01-01"
+               max="2023-12-31"
+               placeholder="mm/dd/yyyy"
+               required
+            />
+            <label class="label-on" for="user-profile"
+               >Perfil del usuario</label
+            >
+            <div class="radio-input-main-conteiner">
+               <input
+                  class="radio-input"
+                  type="radio"
+                  name="user-profile"
+                  id="comprador"
+                  value="Comprador"
+                  required
+               />
+               <label for="comprador">Comprador</label>
+               <input
+                  class="radio-input"
+                  type="radio"
+                  name="user-profile"
+                  id="vendedor"
+                  value="Vendedor"
+                  required
+               />
+               <label for="vendedor">Vendedor</label>
+            </div>
+            <label class="label-on" for="interests">Intereses</label>
+            <div class="checkbox-input-main-conteiner">
+               <div class="checkbox-input-conteiner">
+                  <input
+                     class="checkbox-input"
+                     type="checkbox"
+                     name="interests"
+                     id="electro"
+                     value="Electro"
+                  />
+                  <label for="electro">Electro</label>
+               </div>
+               <div class="checkbox-input-conteiner">
+                  <input
+                     class="checkbox-input"
+                     type="checkbox"
+                     name="interests"
+                     id="moda"
+                     value="Moda"
+                  />
+                  <label for="moda">Moda</label>
+               </div>
+               <div class="checkbox-input-conteiner">
+                  <input
+                     class="checkbox-input"
+                     type="checkbox"
+                     name="interests"
+                     id="hogar"
+                     value="Hogar"
+                  />
+                  <label for="hogar">Hogar</label>
+               </div>
+               <div class="checkbox-input-conteiner">
+                  <input
+                     class="checkbox-input"
+                     type="checkbox"
+                     name="interests"
+                     id="jugueteria"
+                     value="Jugueteria"
+                  />
+                  <label for="jugueteria">Jugueteria</label>
+               </div>
+               <div class="checkbox-input-conteiner">
+                  <input
+                     class="checkbox-input"
+                     type="checkbox"
+                     name="interests"
+                     id="vidasana"
+                     value="Vida sana"
+                  />
+                  <label for="vidasana">Vida sana</label>
+               </div>
+            </div>
+            <label class="label-on" for="profile-photo"
+               >Selecciona una imagen para el perfil</label
+            >
+            <input
+               class="box-input"
+               type="file"
+               id="profile-photo"
+               name="profile-photo"
+               accept=".jgp, .png, .gif, .pdf"
+            />
+            <button type="submit" class="form-button">Enviar</button>
+            <button type="reset" class="form-button">Borrar</button>
+         </form>
+      </section>
+   </body>
+</html>

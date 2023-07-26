@@ -1,0 +1,138 @@
+:root {
+   --main-font: 'Roboto', sans-serif; /* 300, 400, 700 */
+   --yellow: #eac926;
+   --blue: #03264c;
+   --sky-blue: #1259c3;
+   --dark-gray: #666;
+   --dark-gray-border: #666666a1;
+   --dark-gray-bold: #353535;
+   --light-gray: #ebebeb;
+   --green: #39b54a;
+}
+
+/* Startup */
+
+* {
+   box-sizing: border-box;
+   font-family: var(--main-font);
+}
+
+body {
+   background-color: var(--yellow);
+}
+
+h1 {
+   display: none;
+}
+
+/* Main Register Form */
+
+.main__form-conteiner {
+   background-color: var(--light-gray);
+   padding: 15px;
+   margin: 15px;
+   border: 3px solid var(--dark-gray-border);
+   border-radius: 15px;
+   max-width: 599px;
+   height: auto;
+}
+
+.main__title {
+   text-align: center;
+   color: var(--dark-gray-bold);
+   font-weight: 400;
+   font-size: 2rem;
+}
+
+.main__form {
+   padding: 15px;
+}
+
+.label-off {
+   display: none;
+}
+
+.box-input {
+   display: block;
+   width: 100%;
+   height: 3rem;
+   margin-bottom: 15px;
+   padding: 5px;
+   border: 1px solid var(--dark-gray-border);
+   border-radius: 5px;
+}
+
+.box-input:hover {
+   border-color: var(--dark-gray-bold);
+   cursor: pointer;
+}
+
+.box-input:focus {
+   outline: none;
+   border-color: var(--dark-gray-bold);
+}
+
+.box-input::placeholder {
+   color: var(--dark-gray);
+   padding-left: 5px;
+}
+
+.label-on {
+   display: block;
+   text-align: left;
+   font-size: 1.3rem;
+   font-weight: 400;
+   color: var(--dark-gray-bold);
+   margin-bottom: 15px;
+}
+
+.radio-input-main-conteiner {
+   max-width: 600px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-bottom: 15px;
+}
+
+.radio-input-main-conteiner label {
+   font-size: 0.9rem;
+}
+
+.radio-input {
+   display: block;
+}
+
+.checkbox-input-conteiner {
+   margin-bottom: 15px;
+   width: 100%;
+}
+
+.checkbox-input-conteiner label {
+   font-size: 0.9rem;
+}
+
+.form-button {
+   font-size: 1.2rem;
+   padding: 6px 12px;
+   background-color: var(--sky-blue);
+   color: var(--light-gray);
+   border: 2px solid white;
+   border-radius: 5px;
+}
+
+.form-button:hover {
+   opacity: 0.8;
+   color: white;
+   cursor: pointer;
+}
+
+/* Media Query */
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 959px) {
+}
+
+@media (min-width: 1279) {
+}
