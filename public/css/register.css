@@ -33,7 +33,7 @@ h1 {
    margin: 15px;
    border: 3px solid var(--dark-gray-border);
    border-radius: 15px;
-   max-width: 599px;
+   min-width: 272px;
    height: auto;
 }
 
@@ -111,6 +111,11 @@ h1 {
    font-size: 0.9rem;
 }
 
+.form-button-conteiner {
+   display: flex;
+   justify-content: space-evenly;
+}
+
 .form-button {
    font-size: 1.2rem;
    padding: 6px 12px;
@@ -126,13 +131,32 @@ h1 {
    cursor: pointer;
 }
 
+.form-button a {
+   text-decoration: none;
+   color: var(--light-gray);
+}
+
 /* Media Query */
 
-@media (min-width: 600px) {
+@media (min-width: 426px) {
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .main__form-conteiner {
+      max-width: 425px;
+   }
 }
 
-@media (min-width: 959px) {
+@media (min-width: 1023px) {
+   .main__form-conteiner {
+      width: 650px;
+   }
 }
 
-@media (min-width: 1279) {
+@media (min-width: 1200px) {
+   .main__form-conteiner {
+      min-width: 750px;
+   }
 }
