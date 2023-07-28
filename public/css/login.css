@@ -4,29 +4,22 @@
    --blue: #03264c;
    --sky-blue: #1259c3;
    --dark-gray: #666;
+   --dark-gray-border: #666666a1;
+   --dark-gray-bold: #353535;
    --light-gray: #ebebeb;
    --green: #39b54a;
-   /* Font Sizes */
-   --display-text-body: 12px;
-   --display-title: 24px;
-   --display-prices: 18px;
-   --display-discounts: 16px;
-   --display-descriptions: 16px;
 }
+
+/* Startup */
 
 * {
    box-sizing: border-box;
    font-family: var(--main-font);
 }
 
-body {
-   background-color: var(--light-gray);
-}
-
 h1 {
    display: none;
 }
-
 /* --- Header --- */
 
 .main_header {
@@ -119,85 +112,57 @@ h1 {
    height: auto;
 }
 
-/* --- Main --- */
+/* --- main --- */
 
-.main_conteiner {
-   margin: auto;
-   width: 90%;
+.login__main-conteiner {
+   background-color: var(--light-gray);
+   padding: 36px;
 }
 
-.main_section {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
+.label-off {
+   display: none;
 }
 
-.main__title {
-   font-size: var(--display-title);
-   color: var(--dark-gray);
-   margin-left: 10px;
-}
-
-.main_section article {
-   max-width: 350px;
-   text-align: center;
-   margin: 10px;
-   background-color: white;
-}
-
-.product_img {
+.box-input {
+   display: block;
    width: 100%;
-   height: auto;
-   display: block;
-}
-
-.article_div_conteiner {
-   text-align: left;
-   padding: 15px;
-   box-sizing: border-box;
-   border-top: 1px solid var(--light-gray);
-}
-
-.article_div_conteiner i {
-   color: var(--green);
-   display: block;
-   font-size: 1rem;
+   height: 3rem;
+   margin-bottom: 15px;
    padding: 5px;
-   margin-bottom: -36px;
-   width: 30px;
-   height: 30px;
-   border: 1px solid var(--green);
-   background-color: #fff;
-   border-radius: 50%;
-   position: relative;
-   left: 88%;
-   top: -25px;
+   border: 1px solid var(--dark-gray-border);
+   border-radius: 5px;
 }
 
-.div__conteiner-price {
-   max-width: 350px;
-   margin-bottom: -20px;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
+.box-input:hover {
+   border-color: var(--dark-gray-bold);
+   cursor: pointer;
 }
 
-.article__price {
-   width: 30%;
-   font-size: var(--display-prices);
+.box-input:focus {
+   outline: none;
+   border-color: var(--dark-gray-bold);
 }
 
-.article__discounts {
-   width: 70%;
-   font-size: var(--display-discounts);
-   color: var(--green);
+.box-input::placeholder {
+   color: var(--dark-gray);
+   padding-left: 5px;
 }
 
-.article__description {
-   font-size: var(--display-descriptions);
+.form-button {
+   width: 100%;
+   height: 3rem;
+   font-size: 1.2rem;
+   padding: 6px 12px;
+   background-color: var(--sky-blue);
+   color: var(--light-gray);
+   border: 2px solid white;
+   border-radius: 5px;
+}
+
+.form-button:hover {
    opacity: 0.8;
-   margin-bottom: 0;
+   color: white;
+   cursor: pointer;
 }
 
 /* --- Footer --- */
@@ -238,46 +203,55 @@ h1 {
 
 /* Media queries */
 
-@media (max-width: 360px) {
-   main section article .article__description {
-      display: none;
-   }
-}
-
-@media (min-width: 361px) {
-   .main_section article {
-      box-shadow: 0 0 10px rgb(100, 100, 100);
-   }
-}
-
 @media (min-width: 768px) {
    .main_header_logo {
       max-width: 33%;
       padding: 10px;
    }
+
    .main_header_search_bar {
       max-width: 33%;
       padding: 10px;
    }
+
    .main_header_description {
       padding: 10px;
       max-width: 33%;
       text-align: center;
       font-size: 1.3rem;
    }
+
    .hamburguer_button {
       display: none;
    }
+
    .main_navbar {
       display: flex;
       justify-content: space-between;
       padding: 0 15px;
    }
+
    .main_navbar ul {
       display: flex;
    }
+
    .main_navbar li {
       margin: 0 5px;
+   }
+
+   .main__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .box-input {
+      max-width: 700px;
+   }
+
+   .form-button {
+      max-width: 700px;
    }
 }
 
@@ -286,29 +260,36 @@ h1 {
    .main_navbar {
       width: 100%;
    }
+
    .main_header_logo {
       padding-right: 24px;
    }
+
    .main_header_search_bar {
       padding-right: 24px;
    }
+
    .main_header_description {
       padding-right: 24px;
       font-size: 1.6rem;
       font-weight: 400;
    }
+
    .main_navbar {
       width: 100%;
       margin: 40px 0 20px;
       padding: 0;
       font-size: 1.4rem;
    }
+
    .main_navbar li {
       margin: 0 10px;
    }
+
    .main_navbar a {
       font-size: 1.4rem;
    }
+
    .header_banner {
       display: inline;
    }

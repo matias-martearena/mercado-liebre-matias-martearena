@@ -151,12 +151,12 @@ h1 {
 
 @media (min-width: 1023px) {
    .main__form-conteiner {
-      width: 650px;
+      min-width: 650px;
    }
 }
 
 @media (min-width: 1200px) {
    .main__form-conteiner {
-      min-width: 750px;
+      min-width: 800px;
    }
 }
