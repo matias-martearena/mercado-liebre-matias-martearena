@@ -25,5 +25,5 @@ app.post('/login', (req, res) => {
    res.redirect('/')
 })
 
-const PORT = 3000
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => console.log(`Servidor en PORT:${PORT} corriendo`))
