@@ -15,6 +15,8 @@
 }
 
 * {
+   margin: 0;
+   padding: 0;
    box-sizing: border-box;
    font-family: var(--main-font);
 }
@@ -31,8 +33,8 @@ h1 {
 
 .main_header {
    background-color: var(--yellow);
-   width: 100vw;
-   padding-bottom: 1rem;
+   width: 100%;
+   padding: 0 0 1rem;
 }
 
 .main_header_top_bar {
@@ -40,11 +42,11 @@ h1 {
    justify-content: space-evenly;
    flex-wrap: wrap;
    align-items: center;
-   padding: 10px 10px 0;
+   padding: 1rem;
 }
 
 .main_header_logo {
-   padding-right: 5px;
+   padding-right: 1rem;
    width: 50%;
 }
 
@@ -81,6 +83,7 @@ h1 {
    font-size: 1rem;
    font-weight: 400;
    text-align: center;
+   margin-top: 10px;
 }
 
 .hamburguer_button {
@@ -119,11 +122,17 @@ h1 {
    height: auto;
 }
 
-/* --- Main --- */
+/* MAIN CONTENT */
 
 .main_conteiner {
    margin: auto;
    width: 90%;
+}
+
+.main__title {
+   font-size: var(--display-title);
+   color: var(--dark-gray);
+   margin: 1rem 0 0 10px;
 }
 
 .main_section {
@@ -133,16 +142,11 @@ h1 {
    align-items: center;
 }
 
-.main__title {
-   font-size: var(--display-title);
-   color: var(--dark-gray);
-   margin-left: 10px;
-}
-
 .main_section article {
    max-width: 350px;
    text-align: center;
    margin: 10px;
+   padding: 0.5rem;
    background-color: white;
 }
 
@@ -154,8 +158,7 @@ h1 {
 
 .article_div_conteiner {
    text-align: left;
-   padding: 15px;
-   box-sizing: border-box;
+   padding: 0.5rem 0.5rem;
    border-top: 1px solid var(--light-gray);
 }
 
@@ -163,24 +166,21 @@ h1 {
    color: var(--green);
    display: block;
    font-size: 1rem;
-   padding: 5px;
-   margin-bottom: -36px;
    width: 30px;
    height: 30px;
    border: 1px solid var(--green);
    background-color: #fff;
+   padding: 5px;
    border-radius: 50%;
    position: relative;
    left: 88%;
-   top: -25px;
 }
 
 .div__conteiner-price {
    max-width: 350px;
-   margin-bottom: -20px;
    display: flex;
-   justify-content: flex-start;
    align-items: center;
+   gap: 1rem;
 }
 
 .article__price {
@@ -195,9 +195,10 @@ h1 {
 }
 
 .article__description {
+   margin-top: 0.5rem;
    font-size: var(--display-descriptions);
    opacity: 0.8;
-   margin-bottom: 0;
+   display: none;
 }
 
 /* --- Footer --- */
@@ -238,15 +239,12 @@ h1 {
 
 /* Media queries */
 
-@media (max-width: 360px) {
-   main section article .article__description {
-      display: none;
-   }
-}
-
 @media (min-width: 361px) {
    .main_section article {
       box-shadow: 0 0 10px rgb(100, 100, 100);
+   }
+   .main_section .article__description {
+      display: block;
    }
 }
 
