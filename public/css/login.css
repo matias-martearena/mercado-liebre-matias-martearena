@@ -20,7 +20,8 @@
 h1 {
    display: none;
 }
-/* --- Header --- */
+
+/* HEADER */
 
 .main_header {
    background-color: var(--yellow);
@@ -112,7 +113,7 @@ h1 {
    height: auto;
 }
 
-/* --- main --- */
+/* MAIN CONTENT */
 
 .login__main-conteiner {
    background-color: var(--light-gray);
@@ -163,6 +164,7 @@ h1 {
    opacity: 0.8;
    color: white;
    cursor: pointer;
+   background-color: #0022aa;
 }
 
 /* --- Footer --- */
